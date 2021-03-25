@@ -1,0 +1,400 @@
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1{
+    padding: 8px;
+    background: rgb(61, 61, 61);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: "Roboto Slab", serif;
+}
+
+h2{
+    padding: 8px;
+    background: #fd7200;
+    margin: 0;
+    font-size: 64px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+}
+
+
+p{
+    line-height: 1.5;
+}
+
+main{
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Banner */
+
+#banner {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2) url(img/904942.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+#banner h3{
+    background: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+/* Navigation */
+
+nav{
+    align-items: center;
+    height: 130px;
+    background: #202125;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 19px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav a{
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+nav div{
+    height: 100%;
+    width: 25%;
+}
+#login-logout-buttons{
+    align-items: center;
+    display:flex;
+    justify-content: flex-end;
+}
+
+#login-logout-buttons p{
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+
+#logout-button {
+    background-color: #e62831;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    display: flex;
+}
+
+.profile-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    display: flex;
+}
+/* end of navigation */
+
+
+.login-form, .signup-form{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-size: 32px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    background: rgb(46, 46, 46);
+}
+
+.edit-profile-form{
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-size: 32px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    background: rgb(46, 46, 46);
+}
+.signup-form form{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(88, 88, 88);
+    line-height: 3.0;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.edit-profile-form form{
+    align-items: center;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.edit-profile-form div{
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-form div{
+    align-items: center;
+    width: 80%;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-form select{
+    font-family: "Roboto Condensed", sans-serif;
+    width: 82%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+p.signuperror{
+    border-radius: 10px;
+    background: rgb(63, 63, 63);
+    padding: 15px;
+    color: red;
+}
+
+p.signupsuccess{
+    border-radius: 10px;
+    background: rgb(63, 63, 63);
+    padding: 15px;
+    color: #4CAF50;
+}
+
+
+input[type=text], input[type=password]{
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+
+.login-button, .signup-button, .edit-profile-save-button {
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 55px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+
+.active{
+    color: #D29500;
+}
+
+#logo-img{
+    display: flex;
+    height: 100%;
+    background: #111;
+    padding: 0 32px;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+}
+
+#logo-img img{
+    height: 100px;
+}
+
+#logo-img:hover{
+    background: black;
+}
+
+/* Banner */
+
+#banner {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.2) url(img/904942.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+#banner h3{
+    background: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+}
+
+footer a{
+    color: white;
+}
+
+footer #left-footer{
+    flex: 1;
+    border-right: 1px solid red;
+    padding-left: 32px;
+}
+
+footer #left-footer ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer{
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer .social-media-footer a .fa-facebook,
+footer .social-media-footer a .fa-youtube,
+footer .social-media-footer a .fa-github{
+    color:white;
+    transition: 0.4s;
+}
+
+footer .social-media-footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer .social-media-footer ul li{
+    font-size: 48px;
+    padding: 16px;
+    transition: 0;
+}
+
+footer .social-media-footer ul li:hover a .fa-youtube{
+    color: red;
+}
+
+footer .social-media-footer ul li:hover a .fa-facebook{
+    color: #3b5998;
+}
+
+footer .social-media-footer ul li:hover a .fa-github{
+    color: #bbb;
+}
+
+
+/* Profile page */
+
+.info{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    font-size: 24px;
+    background: grey;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.info div{
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.info > div:nth-of-type(odd) {
+    background: #646464;
+    color: rgb(255, 255, 255);
+}
+div.info > div:nth-of-type(even) {
+    background: rgb(43, 43, 43);
+    color:  #e0e0e0;
+}
+
+
+.fa-thumbs-up{
+    color: green;
+    font-size: 60px;
+}
+
+.fa-thumbs-down{
+    color: red;
+    font-size: 60px;
+}
